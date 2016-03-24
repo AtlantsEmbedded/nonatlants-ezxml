@@ -113,8 +113,8 @@ ezxml.o: ezxml.c ezxml.h
 
 install:  
 	$(MKDIR) $(DESTDIR)/lib/
-	$(COPY_FILE) -a lib$(LIBBASENAME).so* $(DESTDIR)/lib
-	$(COPY_FILE) -a *.h $(DESTDIR)/usr/include/
+	$(COPY_FILE) -a lib$(LIBBASENAME).so* /lib
+	$(COPY_FILE) -a *.h /usr/include/
 
 uninstall:   FORCE
 
